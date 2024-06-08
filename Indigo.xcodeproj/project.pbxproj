@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92F92EE82C140D9D00B8EF18 /* IndigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92EE72C140D9D00B8EF18 /* IndigoApp.swift */; };
+		92F92EEA2C140D9D00B8EF18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92EE92C140D9D00B8EF18 /* ContentView.swift */; };
+		92F92EEC2C140D9F00B8EF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F92EEB2C140D9F00B8EF18 /* Assets.xcassets */; };
+		92F92EEF2C140D9F00B8EF18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F92EEE2C140D9F00B8EF18 /* Preview Assets.xcassets */; };
+		92F92EF92C140DA000B8EF18 /* IndigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92EF82C140DA000B8EF18 /* IndigoTests.swift */; };
+		92F92F032C140DA000B8EF18 /* IndigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F022C140DA000B8EF18 /* IndigoUITests.swift */; };
+		92F92F052C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F042C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92F92EF52C140DA000B8EF18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92F92EDC2C140D9D00B8EF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92F92EE32C140D9D00B8EF18;
+			remoteInfo = Indigo;
+		};
+		92F92EFF2C140DA000B8EF18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92F92EDC2C140D9D00B8EF18 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92F92EE32C140D9D00B8EF18;
+			remoteInfo = Indigo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92F92EE42C140D9D00B8EF18 /* Indigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F92EE72C140D9D00B8EF18 /* IndigoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoApp.swift; sourceTree = "<group>"; };
+		92F92EE92C140D9D00B8EF18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92F92EEB2C140D9F00B8EF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92F92EEE2C140D9F00B8EF18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92F92EF42C140DA000B8EF18 /* IndigoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndigoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F92EF82C140DA000B8EF18 /* IndigoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoTests.swift; sourceTree = "<group>"; };
+		92F92EFE2C140DA000B8EF18 /* IndigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F92F022C140DA000B8EF18 /* IndigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoUITests.swift; sourceTree = "<group>"; };
+		92F92F042C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92F92EE12C140D9D00B8EF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F92EF12C140DA000B8EF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F92EFB2C140DA000B8EF18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92F92EDB2C140D9D00B8EF18 = {
+			isa = PBXGroup;
+			children = (
+				92F92EE62C140D9D00B8EF18 /* Indigo */,
+				92F92EF72C140DA000B8EF18 /* IndigoTests */,
+				92F92F012C140DA000B8EF18 /* IndigoUITests */,
+				92F92EE52C140D9D00B8EF18 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92F92EE52C140D9D00B8EF18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92F92EE42C140D9D00B8EF18 /* Indigo.app */,
+				92F92EF42C140DA000B8EF18 /* IndigoTests.xctest */,
+				92F92EFE2C140DA000B8EF18 /* IndigoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92F92EE62C140D9D00B8EF18 /* Indigo */ = {
+			isa = PBXGroup;
+			children = (
+				92F92EE72C140D9D00B8EF18 /* IndigoApp.swift */,
+				92F92EE92C140D9D00B8EF18 /* ContentView.swift */,
+				92F92EEB2C140D9F00B8EF18 /* Assets.xcassets */,
+				92F92EED2C140D9F00B8EF18 /* Preview Content */,
+			);
+			path = Indigo;
+			sourceTree = "<group>";
+		};
+		92F92EED2C140D9F00B8EF18 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92F92EEE2C140D9F00B8EF18 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92F92EF72C140DA000B8EF18 /* IndigoTests */ = {
+			isa = PBXGroup;
+			children = (
+				92F92EF82C140DA000B8EF18 /* IndigoTests.swift */,
+			);
+			path = IndigoTests;
+			sourceTree = "<group>";
+		};
+		92F92F012C140DA000B8EF18 /* IndigoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92F92F022C140DA000B8EF18 /* IndigoUITests.swift */,
+				92F92F042C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift */,
+			);
+			path = IndigoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92F92EE32C140D9D00B8EF18 /* Indigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F92F082C140DA000B8EF18 /* Build configuration list for PBXNativeTarget "Indigo" */;
+			buildPhases = (
+				92F92EE02C140D9D00B8EF18 /* Sources */,
+				92F92EE12C140D9D00B8EF18 /* Frameworks */,
+				92F92EE22C140D9D00B8EF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Indigo;
+			productName = Indigo;
+			productReference = 92F92EE42C140D9D00B8EF18 /* Indigo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F92EF32C140DA000B8EF18 /* IndigoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F92F0B2C140DA000B8EF18 /* Build configuration list for PBXNativeTarget "IndigoTests" */;
+			buildPhases = (
+				92F92EF02C140DA000B8EF18 /* Sources */,
+				92F92EF12C140DA000B8EF18 /* Frameworks */,
+				92F92EF22C140DA000B8EF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92F92EF62C140DA000B8EF18 /* PBXTargetDependency */,
+			);
+			name = IndigoTests;
+			productName = IndigoTests;
+			productReference = 92F92EF42C140DA000B8EF18 /* IndigoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92F92EFD2C140DA000B8EF18 /* IndigoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F92F0E2C140DA000B8EF18 /* Build configuration list for PBXNativeTarget "IndigoUITests" */;
+			buildPhases = (
+				92F92EFA2C140DA000B8EF18 /* Sources */,
+				92F92EFB2C140DA000B8EF18 /* Frameworks */,
+				92F92EFC2C140DA000B8EF18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92F92F002C140DA000B8EF18 /* PBXTargetDependency */,
+			);
+			name = IndigoUITests;
+			productName = IndigoUITests;
+			productReference = 92F92EFE2C140DA000B8EF18 /* IndigoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92F92EDC2C140D9D00B8EF18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					92F92EE32C140D9D00B8EF18 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					92F92EF32C140DA000B8EF18 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 92F92EE32C140D9D00B8EF18;
+					};
+					92F92EFD2C140DA000B8EF18 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 92F92EE32C140D9D00B8EF18;
+					};
+				};
+			};
+			buildConfigurationList = 92F92EDF2C140D9D00B8EF18 /* Build configuration list for PBXProject "Indigo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92F92EDB2C140D9D00B8EF18;
+			productRefGroup = 92F92EE52C140D9D00B8EF18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92F92EE32C140D9D00B8EF18 /* Indigo */,
+				92F92EF32C140DA000B8EF18 /* IndigoTests */,
+				92F92EFD2C140DA000B8EF18 /* IndigoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92F92EE22C140D9D00B8EF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F92EEF2C140D9F00B8EF18 /* Preview Assets.xcassets in Resources */,
+				92F92EEC2C140D9F00B8EF18 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F92EF22C140DA000B8EF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F92EFC2C140DA000B8EF18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92F92EE02C140D9D00B8EF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F92EEA2C140D9D00B8EF18 /* ContentView.swift in Sources */,
+				92F92EE82C140D9D00B8EF18 /* IndigoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F92EF02C140DA000B8EF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F92EF92C140DA000B8EF18 /* IndigoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F92EFA2C140DA000B8EF18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F92F052C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift in Sources */,
+				92F92F032C140DA000B8EF18 /* IndigoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92F92EF62C140DA000B8EF18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92F92EE32C140D9D00B8EF18 /* Indigo */;
+			targetProxy = 92F92EF52C140DA000B8EF18 /* PBXContainerItemProxy */;
+		};
+		92F92F002C140DA000B8EF18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92F92EE32C140D9D00B8EF18 /* Indigo */;
+			targetProxy = 92F92EFF2C140DA000B8EF18 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		92F92F062C140DA000B8EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Debug;
+		};
+		92F92F072C140DA000B8EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92F92F092C140DA000B8EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Indigo/Preview Content\"";
+				DEVELOPMENT_TEAM = QB2T369883;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThrowCatchers.Indigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		92F92F0A2C140DA000B8EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Indigo/Preview Content\"";
+				DEVELOPMENT_TEAM = QB2T369883;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThrowCatchers.Indigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		92F92F0C2C140DA000B8EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB2T369883;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThrowCatchers.IndigoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Indigo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Indigo";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Debug;
+		};
+		92F92F0D2C140DA000B8EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB2T369883;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThrowCatchers.IndigoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Indigo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Indigo";
+				TVOS_DEPLOYMENT_TARGET = 17.5;
+			};
+			name = Release;
+		};
+		92F92F0F2C140DA000B8EF18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB2T369883;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThrowCatchers.IndigoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = Indigo;
+			};
+			name = Debug;
+		};
+		92F92F102C140DA000B8EF18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QB2T369883;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThrowCatchers.IndigoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = Indigo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92F92EDF2C140D9D00B8EF18 /* Build configuration list for PBXProject "Indigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F92F062C140DA000B8EF18 /* Debug */,
+				92F92F072C140DA000B8EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F92F082C140DA000B8EF18 /* Build configuration list for PBXNativeTarget "Indigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F92F092C140DA000B8EF18 /* Debug */,
+				92F92F0A2C140DA000B8EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F92F0B2C140DA000B8EF18 /* Build configuration list for PBXNativeTarget "IndigoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F92F0C2C140DA000B8EF18 /* Debug */,
+				92F92F0D2C140DA000B8EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F92F0E2C140DA000B8EF18 /* Build configuration list for PBXNativeTarget "IndigoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F92F0F2C140DA000B8EF18 /* Debug */,
+				92F92F102C140DA000B8EF18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92F92EDC2C140D9D00B8EF18 /* Project object */;
+}
