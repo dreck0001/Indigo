@@ -14,6 +14,16 @@
 		92F92EF92C140DA000B8EF18 /* IndigoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92EF82C140DA000B8EF18 /* IndigoTests.swift */; };
 		92F92F032C140DA000B8EF18 /* IndigoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F022C140DA000B8EF18 /* IndigoUITests.swift */; };
 		92F92F052C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F042C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift */; };
+		92F92F1A2C140F6D00B8EF18 /* ColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F122C140F6C00B8EF18 /* ColorsView.swift */; };
+		92F92F1B2C140F6D00B8EF18 /* ObjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F132C140F6C00B8EF18 /* ObjectsView.swift */; };
+		92F92F1C2C140F6D00B8EF18 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F142C140F6C00B8EF18 /* NumbersView.swift */; };
+		92F92F1D2C140F6D00B8EF18 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F152C140F6C00B8EF18 /* BaseView.swift */; };
+		92F92F1E2C140F6D00B8EF18 /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F162C140F6D00B8EF18 /* RandomView.swift */; };
+		92F92F1F2C140F6D00B8EF18 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F172C140F6D00B8EF18 /* PhotosView.swift */; };
+		92F92F202C140F6D00B8EF18 /* AlphabetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F182C140F6D00B8EF18 /* AlphabetsView.swift */; };
+		92F92F212C140F6D00B8EF18 /* ShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F192C140F6D00B8EF18 /* ShapesView.swift */; };
+		92F92F252C14102600B8EF18 /* ButtonViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F222C14102600B8EF18 /* ButtonViewModifiers.swift */; };
+		92F92F262C14102600B8EF18 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92F232C14102600B8EF18 /* Consts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		92F92EFE2C140DA000B8EF18 /* IndigoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndigoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F92F022C140DA000B8EF18 /* IndigoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoUITests.swift; sourceTree = "<group>"; };
 		92F92F042C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92F92F122C140F6C00B8EF18 /* ColorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsView.swift; sourceTree = "<group>"; };
+		92F92F132C140F6C00B8EF18 /* ObjectsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectsView.swift; sourceTree = "<group>"; };
+		92F92F142C140F6C00B8EF18 /* NumbersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		92F92F152C140F6C00B8EF18 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		92F92F162C140F6D00B8EF18 /* RandomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
+		92F92F172C140F6D00B8EF18 /* PhotosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		92F92F182C140F6D00B8EF18 /* AlphabetsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabetsView.swift; sourceTree = "<group>"; };
+		92F92F192C140F6D00B8EF18 /* ShapesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesView.swift; sourceTree = "<group>"; };
+		92F92F222C14102600B8EF18 /* ButtonViewModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewModifiers.swift; sourceTree = "<group>"; };
+		92F92F232C14102600B8EF18 /* Consts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +116,9 @@
 			children = (
 				92F92EE72C140D9D00B8EF18 /* IndigoApp.swift */,
 				92F92EE92C140D9D00B8EF18 /* ContentView.swift */,
+				92F92F112C140F5400B8EF18 /* Content */,
 				92F92EEB2C140D9F00B8EF18 /* Assets.xcassets */,
+				92F92F242C14102600B8EF18 /* Utilities */,
 				92F92EED2C140D9F00B8EF18 /* Preview Content */,
 			);
 			path = Indigo;
@@ -125,6 +147,30 @@
 				92F92F042C140DA000B8EF18 /* IndigoUITestsLaunchTests.swift */,
 			);
 			path = IndigoUITests;
+			sourceTree = "<group>";
+		};
+		92F92F112C140F5400B8EF18 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				92F92F152C140F6C00B8EF18 /* BaseView.swift */,
+				92F92F182C140F6D00B8EF18 /* AlphabetsView.swift */,
+				92F92F122C140F6C00B8EF18 /* ColorsView.swift */,
+				92F92F142C140F6C00B8EF18 /* NumbersView.swift */,
+				92F92F132C140F6C00B8EF18 /* ObjectsView.swift */,
+				92F92F172C140F6D00B8EF18 /* PhotosView.swift */,
+				92F92F162C140F6D00B8EF18 /* RandomView.swift */,
+				92F92F192C140F6D00B8EF18 /* ShapesView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		92F92F242C14102600B8EF18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				92F92F222C14102600B8EF18 /* ButtonViewModifiers.swift */,
+				92F92F232C14102600B8EF18 /* Consts.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +303,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F92F1E2C140F6D00B8EF18 /* RandomView.swift in Sources */,
+				92F92F262C14102600B8EF18 /* Consts.swift in Sources */,
+				92F92F1A2C140F6D00B8EF18 /* ColorsView.swift in Sources */,
+				92F92F252C14102600B8EF18 /* ButtonViewModifiers.swift in Sources */,
+				92F92F1C2C140F6D00B8EF18 /* NumbersView.swift in Sources */,
+				92F92F202C140F6D00B8EF18 /* AlphabetsView.swift in Sources */,
+				92F92F1F2C140F6D00B8EF18 /* PhotosView.swift in Sources */,
+				92F92F1B2C140F6D00B8EF18 /* ObjectsView.swift in Sources */,
+				92F92F1D2C140F6D00B8EF18 /* BaseView.swift in Sources */,
 				92F92EEA2C140D9D00B8EF18 /* ContentView.swift in Sources */,
+				92F92F212C140F6D00B8EF18 /* ShapesView.swift in Sources */,
 				92F92EE82C140D9D00B8EF18 /* IndigoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
