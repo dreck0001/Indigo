@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ColorsView: View {
     var body: some View {
-        BaseView(contentTyoe: .Colors)
+        BaseView(subject: .Colors)
     }
 }
 

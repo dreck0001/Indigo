@@ -16,7 +16,8 @@ struct ContentView: View {
             ShapesView().tabItem { Label("Shapes", systemImage: "dot.squareshape.fill") }.tag(3)
             PhotosView().tabItem { Label("Album", systemImage: "person.2.crop.square.stack") }.tag(4)
             ObjectsView().tabItem { Label("Objects", systemImage: "apple.logo") }.tag(5)
-            RandomView().tabItem { Label("Random", systemImage: "wand.and.stars.inverse") }.tag(6)
+            FlagsView().tabItem { Label("FLagss", systemImage: "flag.filled.and.flag.crossed") }.tag(6)
+            RandomView().tabItem { Label("Random", systemImage: "wand.and.stars.inverse") }.tag(7)
         }
     }
 }

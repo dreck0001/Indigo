@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AlphabetsView: View {
     var body: some View {
-        BaseView(contentTyoe: .Alphabets)
+        BaseView(subject: .Alphabets)
     }
 }
 

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ShapesView: View {
     var body: some View {
-        BaseView(contentTyoe: .Shapes)
+        BaseView(subject: .Shapes)
     }
 }
 

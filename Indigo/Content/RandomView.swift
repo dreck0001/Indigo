@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RandomView: View {
     var body: some View {
-        BaseView(contentTyoe: .Random)
+        BaseView(subject: .Random)
     }
 }
 

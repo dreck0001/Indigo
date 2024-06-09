@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PhotosView: View {
     var body: some View {
-        BaseView(contentTyoe: .Photos)
+        BaseView(subject: .Photos)
     }
 }
 

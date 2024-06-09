@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92AC29002C153DC400293822 /* FlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AC28FF2C153DC400293822 /* FlagsView.swift */; };
 		92F92EE82C140D9D00B8EF18 /* IndigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92EE72C140D9D00B8EF18 /* IndigoApp.swift */; };
 		92F92EEA2C140D9D00B8EF18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F92EE92C140D9D00B8EF18 /* ContentView.swift */; };
 		92F92EEC2C140D9F00B8EF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F92EEB2C140D9F00B8EF18 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92AC28FF2C153DC400293822 /* FlagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsView.swift; sourceTree = "<group>"; };
 		92F92EE42C140D9D00B8EF18 /* Indigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F92EE72C140D9D00B8EF18 /* IndigoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndigoApp.swift; sourceTree = "<group>"; };
 		92F92EE92C140D9D00B8EF18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,8 +160,9 @@
 				92F92F142C140F6C00B8EF18 /* NumbersView.swift */,
 				92F92F132C140F6C00B8EF18 /* ObjectsView.swift */,
 				92F92F172C140F6D00B8EF18 /* PhotosView.swift */,
-				92F92F162C140F6D00B8EF18 /* RandomView.swift */,
 				92F92F192C140F6D00B8EF18 /* ShapesView.swift */,
+				92AC28FF2C153DC400293822 /* FlagsView.swift */,
+				92F92F162C140F6D00B8EF18 /* RandomView.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				92F92F1F2C140F6D00B8EF18 /* PhotosView.swift in Sources */,
 				92F92F1B2C140F6D00B8EF18 /* ObjectsView.swift in Sources */,
 				92F92F1D2C140F6D00B8EF18 /* BaseView.swift in Sources */,
+				92AC29002C153DC400293822 /* FlagsView.swift in Sources */,
 				92F92EEA2C140D9D00B8EF18 /* ContentView.swift in Sources */,
 				92F92F212C140F6D00B8EF18 /* ShapesView.swift in Sources */,
 				92F92EE82C140D9D00B8EF18 /* IndigoApp.swift in Sources */,

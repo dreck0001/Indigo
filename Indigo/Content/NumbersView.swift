@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NumbersView: View {
     var body: some View {
-        BaseView(contentTyoe: .Numbers)
+        BaseView(subject: .Numbers)
     }
 }
 
