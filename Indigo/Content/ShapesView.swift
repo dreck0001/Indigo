@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ShapesView: View {
     var body: some View {
-        BaseView(subject: .Shapes)
-    }
+        Text("Colors Content")
+                    .font(.largeTitle)
+                    .padding()    }
 }
 
 #Preview {

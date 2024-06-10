@@ -9,8 +9,9 @@ import SwiftUI
 
 struct RandomView: View {
     var body: some View {
-        BaseView(subject: .Random)
-    }
+        Text("Colors Content")
+                    .font(.largeTitle)
+                    .padding()    }
 }
 
 #Preview {

@@ -9,8 +9,9 @@ import SwiftUI
 
 struct FlagsView: View {
     var body: some View {
-        BaseView(subject: .Flags)
-    }
+        Text("Colors Content")
+                    .font(.largeTitle)
+                    .padding()    }
 }
 
 #Preview {
