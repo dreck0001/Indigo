@@ -18,7 +18,8 @@ struct AlphabetsView: View {
             ZStack {
                 HStack {
                     Button(action: previousAlphabet, label: {
-                        Text("Previous")
+                        Image(systemName: "chevron.backward")
+
                             .button1()
                             .buttonDisable(status: play)
                     })
@@ -26,11 +27,11 @@ struct AlphabetsView: View {
 
                     Button(action: { togglePlay() }, label: {
                         Image(systemName: play ? "stop.fill" : "play.fill")
-//                            .button1()
                     })
                     
                     Button(action: nextAlphabet, label: {
-                        Text("Next")
+//                        Text("Next")
+                        Image(systemName: "chevron.forward")
                             .button1()
                             .buttonDisable(status: play)
                     })
