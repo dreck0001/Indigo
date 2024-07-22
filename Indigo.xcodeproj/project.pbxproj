@@ -70,6 +70,7 @@
 		E7376EC02C4E07AB007B7DE7 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7376EB42C4E07AA007B7DE7 /* PhotosView.swift */; };
 		E7376EC12C4E07AB007B7DE7 /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7376EB52C4E07AA007B7DE7 /* RandomView.swift */; };
 		E7376EC22C4E07AB007B7DE7 /* ShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7376EB62C4E07AA007B7DE7 /* ShapesView.swift */; };
+		E7376EC42C4E0BC0007B7DE7 /* CommonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7376EC32C4E0BC0007B7DE7 /* CommonViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,7 @@
 		E7376EB42C4E07AA007B7DE7 /* PhotosView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 		E7376EB52C4E07AA007B7DE7 /* RandomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomView.swift; sourceTree = "<group>"; };
 		E7376EB62C4E07AA007B7DE7 /* ShapesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapesView.swift; sourceTree = "<group>"; };
+		E7376EC32C4E0BC0007B7DE7 /* CommonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -355,10 +357,11 @@
 		E7376EB72C4E07AA007B7DE7 /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				E7376EC32C4E0BC0007B7DE7 /* CommonViews.swift */,
 				E7376EAF2C4E07AA007B7DE7 /* AlphabetsView.swift */,
+				E7376EB22C4E07AA007B7DE7 /* NumbersView.swift */,
 				E7376EB02C4E07AA007B7DE7 /* ColorsView.swift */,
 				E7376EB12C4E07AA007B7DE7 /* FlagsView.swift */,
-				E7376EB22C4E07AA007B7DE7 /* NumbersView.swift */,
 				E7376EB32C4E07AA007B7DE7 /* ObjectsView.swift */,
 				E7376EB42C4E07AA007B7DE7 /* PhotosView.swift */,
 				E7376EB52C4E07AA007B7DE7 /* RandomView.swift */,
@@ -554,6 +557,7 @@
 				E7376EBB2C4E07AA007B7DE7 /* AlphabetsView.swift in Sources */,
 				E7376EC02C4E07AB007B7DE7 /* PhotosView.swift in Sources */,
 				E7376EBD2C4E07AA007B7DE7 /* FlagsView.swift in Sources */,
+				E7376EC42C4E0BC0007B7DE7 /* CommonViews.swift in Sources */,
 				E7376EB82C4E07AA007B7DE7 /* ButtonViewModifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
