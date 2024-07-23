@@ -16,28 +16,28 @@ struct NumberData: ContentData {
     
     static let data: [String: [NumberContent]] = [
         "English": [
-                    NumberContent(number: "0", spelling: "zero"),
-                    NumberContent(number: "1", spelling: "one"),
-                    NumberContent(number: "2", spelling: "two"),
-                    NumberContent(number: "3", spelling: "three"),
-                    NumberContent(number: "4", spelling: "four"),
-                    NumberContent(number: "5", spelling: "five"),
-                    NumberContent(number: "6", spelling: "six"),
-                    NumberContent(number: "7", spelling: "seven"),
-                    NumberContent(number: "8", spelling: "eight"),
-                    NumberContent(number: "9", spelling: "nine"),
-                    NumberContent(number: "10", spelling: "ten"),
-                    NumberContent(number: "11", spelling: "eleven"),
-                    NumberContent(number: "12", spelling: "twelve"),
-                    NumberContent(number: "13", spelling: "thirteen"),
-                    NumberContent(number: "14", spelling: "fourteen"),
-                    NumberContent(number: "15", spelling: "fifteen"),
-                    NumberContent(number: "16", spelling: "sixteen"),
-                    NumberContent(number: "17", spelling: "seventeen"),
-                    NumberContent(number: "18", spelling: "eighteen"),
-                    NumberContent(number: "19", spelling: "nineteen"),
-                    NumberContent(number: "20", spelling: "twenty")
-                ],
+            NumberContent(number: "0", spelling: "zero"),
+            NumberContent(number: "1", spelling: "one"),
+            NumberContent(number: "2", spelling: "two"),
+            NumberContent(number: "3", spelling: "three"),
+            NumberContent(number: "4", spelling: "four"),
+            NumberContent(number: "5", spelling: "five"),
+            NumberContent(number: "6", spelling: "six"),
+            NumberContent(number: "7", spelling: "seven"),
+            NumberContent(number: "8", spelling: "eight"),
+            NumberContent(number: "9", spelling: "nine"),
+            NumberContent(number: "10", spelling: "ten"),
+            NumberContent(number: "11", spelling: "eleven"),
+            NumberContent(number: "12", spelling: "twelve"),
+            NumberContent(number: "13", spelling: "thirteen"),
+            NumberContent(number: "14", spelling: "fourteen"),
+            NumberContent(number: "15", spelling: "fifteen"),
+            NumberContent(number: "16", spelling: "sixteen"),
+            NumberContent(number: "17", spelling: "seventeen"),
+            NumberContent(number: "18", spelling: "eighteen"),
+            NumberContent(number: "19", spelling: "nineteen"),
+            NumberContent(number: "20", spelling: "twenty")
+        ],
         "French": [
             NumberContent(number: "0", spelling: "zéro"), NumberContent(number: "1", spelling: "un"),
             NumberContent(number: "2", spelling: "deux"), NumberContent(number: "3", spelling: "trois"),
@@ -69,21 +69,37 @@ struct NumberData: ContentData {
 
 class NumbersViewModel: FlippableContent {
     typealias ContentType = NumberData
+    typealias DisplayContentType = NumberData.NumberContent
+    
+    enum NumberRange {
+        case zeroToTen, zeroToTwenty, zeroToFifty, zeroToHundred
+    }
         
-        @Published var currentNumberIndex: Int = 0
-        @Published var selectedLanguage: String = "English"
-        @Published var isRandomOrder: Bool = false
-        @Published var isAudioEnabled: Bool = true
-        @Published var play: Bool = false
-        @Published var isFlipping: Bool = false
-        
-        private var timer: Timer?
-        private var audioPlayer: AVAudioPlayer?
-        private var shuffledIndices: [Int] = []
-        
-        var currentContent: [NumberData.NumberContent] {
-            NumberData.data[selectedLanguage] ?? NumberData.data["English"]!
+    @Published var currentNumberIndex: Int = 0
+    @Published var selectedLanguage: String = "English"
+    @Published var isRandomOrder: Bool = false
+    @Published var isAudioEnabled: Bool = true
+    @Published var play: Bool = false
+    @Published var isFlipping: Bool = false
+    @Published var selectedRange: NumberRange = .zeroToTwenty
+    
+    private var timer: Timer?
+    private var audioPlayer: AVAudioPlayer?
+    private var shuffledIndices: [Int] = []
+    
+    var currentContent: [NumberData.NumberContent] {
+        let allContent = NumberData.data[selectedLanguage] ?? NumberData.data["English"]!
+        switch selectedRange {
+        case .zeroToTen:
+            return Array(allContent[0...10])
+        case .zeroToTwenty:
+            return allContent
+        case .zeroToFifty:
+            return allContent + (21...50).map { NumberData.NumberContent(number: "\($0)", spelling: "") }
+        case .zeroToHundred:
+            return allContent + (21...100).map { NumberData.NumberContent(number: "\($0)", spelling: "") }
         }
+    }
     
     func getCurrentIndex() -> Int {
         isRandomOrder ? shuffledIndices[currentNumberIndex] : currentNumberIndex
@@ -177,6 +193,19 @@ struct NumbersView: View {
     }
 }
 
+struct RangeSelectionView: View {
+    @Binding var selectedRange: NumbersViewModel.NumberRange
+    
+    var body: some View {
+        Picker("Range", selection: $selectedRange) {
+            Text("0-10").tag(NumbersViewModel.NumberRange.zeroToTen)
+            Text("0-20").tag(NumbersViewModel.NumberRange.zeroToTwenty)
+            Text("0-50").tag(NumbersViewModel.NumberRange.zeroToFifty)
+            Text("0-100").tag(NumbersViewModel.NumberRange.zeroToHundred)
+        }
+        .pickerStyle(MenuPickerStyle())
+    }
+}
 
 #Preview {
     NumbersView()

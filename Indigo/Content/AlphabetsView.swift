@@ -3,7 +3,6 @@
 //  Indigo
 //
 //  Created by Denis on 6/5/24.
-//
 
 import SwiftUI
 import AVFoundation
@@ -27,6 +26,16 @@ struct AlphabetData: ContentData {
 
 class AlphabetsViewModel: FlippableContent {
     typealias ContentType = AlphabetData
+    typealias DisplayContentType = AlphabetContent
+    
+    enum CaseType {
+        case upper, lower, both
+    }
+    
+    struct AlphabetContent: Hashable {
+        let upper: String
+        let lower: String
+    }
     
     @Published var currentAlphabetIndex: Int = 0
     @Published var selectedLanguage: String = "English"
@@ -34,13 +43,15 @@ class AlphabetsViewModel: FlippableContent {
     @Published var isAudioEnabled: Bool = true
     @Published var play: Bool = false
     @Published var isFlipping: Bool = false
+    @Published var selectedCaseType: CaseType = .both
     
     private var timer: Timer?
     private var audioPlayer: AVAudioPlayer?
     private var shuffledIndices: [Int] = []
     
-    var currentContent: [String] {
-        AlphabetData.data[selectedLanguage] ?? AlphabetData.data["English"]!
+    var currentContent: [AlphabetContent] {
+        let content = AlphabetData.data[selectedLanguage] ?? AlphabetData.data["English"]!
+        return content.map { AlphabetContent(upper: $0.uppercased(), lower: $0.lowercased()) }
     }
     
     func getCurrentIndex() -> Int {
@@ -85,7 +96,7 @@ class AlphabetsViewModel: FlippableContent {
     func playSound() {
         guard isAudioEnabled else { return }
         
-        let letter = currentContent[getCurrentIndex()].lowercased()
+        let letter = currentContent[getCurrentIndex()].lower
         let language = selectedLanguage.lowercased()
         guard let url = Bundle.main.url(forResource: "\(language)_\(letter)", withExtension: "mp3") else {
             print("Audio file not found")
@@ -135,6 +146,19 @@ struct AlphabetsView: View {
     
     var body: some View {
         MainView(content: viewModel)
+    }
+}
+
+struct CaseSelectionView: View {
+    @Binding var selectedCaseType: AlphabetsViewModel.CaseType
+    
+    var body: some View {
+        Picker("Case", selection: $selectedCaseType) {
+            Text("Uppercase").tag(AlphabetsViewModel.CaseType.upper)
+            Text("Lowercase").tag(AlphabetsViewModel.CaseType.lower)
+            Text("Both").tag(AlphabetsViewModel.CaseType.both)
+        }
+        .pickerStyle(MenuPickerStyle())
     }
 }
 

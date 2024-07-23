@@ -4,8 +4,6 @@
 //
 //  Created by Denis Ansah on 7/21/24.
 //
-
-
 import SwiftUI
 import AVFoundation
 
@@ -16,8 +14,9 @@ protocol ContentData {
 
 protocol FlippableContent: ObservableObject {
     associatedtype ContentType: ContentData
+    associatedtype DisplayContentType
     
-    var currentContent: [ContentType.ContentType] { get }
+    var currentContent: [DisplayContentType] { get }
     var selectedLanguage: String { get set }
     var isRandomOrder: Bool { get set }
     var isAudioEnabled: Bool { get set }
@@ -33,11 +32,10 @@ protocol FlippableContent: ObservableObject {
     func stopAllActivities()
 }
 
-
-
 struct FlippingCard: View {
     let content: Any
     @Binding var isFlipping: Bool
+    let caseType: AlphabetsViewModel.CaseType?
 
     @State private var rotation: Double = 0
 
@@ -48,11 +46,21 @@ struct FlippingCard: View {
                 .frame(width: 1000, height: 750)
                 .overlay(
                     Group {
-                        if let stringContent = content as? String {
-                            Text(stringContent)
-                                .font(.system(size: 900))
-                                .fontWeight(.bold)
-                                .foregroundColor(.black)
+                        if let alphabetContent = content as? AlphabetsViewModel.AlphabetContent {
+                            HStack(spacing: 20) {
+                                if caseType != .lower {
+                                    Text(alphabetContent.upper)
+                                        .font(.system(size: caseType == .both ? 500 : 900))
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.black)
+                                }
+                                if caseType != .upper {
+                                    Text(alphabetContent.lower)
+                                        .font(.system(size: caseType == .both ? 500 : 900))
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.black)
+                                }
+                            }
                         } else if let numberContent = content as? NumberData.NumberContent {
                             ZStack {
                                 Text(numberContent.number)
@@ -149,7 +157,8 @@ struct MainView<Content: FlippableContent>: View {
                     Spacer()
                     FlippingCard(
                         content: content.currentContent[content.getCurrentIndex()],
-                        isFlipping: $content.isFlipping
+                        isFlipping: $content.isFlipping,
+                        caseType: (content as? AlphabetsViewModel)?.selectedCaseType
                     )
                 }
                 .frame(width: geometry.size.width * 3/4)
@@ -191,6 +200,18 @@ struct MainView<Content: FlippableContent>: View {
                         LanguageSelectionView(selectedLanguage: $content.selectedLanguage, languages: Array(Content.ContentType.data.keys))
                         OrderSelectionView(isRandomOrder: $content.isRandomOrder)
                         AudioToggleView(isAudioEnabled: $content.isAudioEnabled)
+                        if Content.self == AlphabetsViewModel.self {
+                            CaseSelectionView(selectedCaseType: Binding(
+                                get: { (content as! AlphabetsViewModel).selectedCaseType },
+                                set: { (content as! AlphabetsViewModel).selectedCaseType = $0 }
+                            ))
+                        }
+                        if Content.self == NumbersViewModel.self {
+                            RangeSelectionView(selectedRange: Binding(
+                                get: { (content as! NumbersViewModel).selectedRange },
+                                set: { (content as! NumbersViewModel).selectedRange = $0 }
+                            ))
+                        }
                     }
                     .scaleEffect(0.5)
                 }
@@ -213,5 +234,5 @@ struct MainView<Content: FlippableContent>: View {
 }
 
 #Preview {
-    NumbersView()
+    AlphabetsView()
 }
