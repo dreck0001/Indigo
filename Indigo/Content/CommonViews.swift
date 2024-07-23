@@ -10,13 +10,14 @@ import SwiftUI
 import AVFoundation
 
 protocol ContentData {
-    static var data: [String: [String]] { get }
+    associatedtype ContentType
+    static var data: [String: [ContentType]] { get }
 }
 
 protocol FlippableContent: ObservableObject {
     associatedtype ContentType: ContentData
     
-    var currentContent: [String] { get }
+    var currentContent: [ContentType.ContentType] { get }
     var selectedLanguage: String { get set }
     var isRandomOrder: Bool { get set }
     var isAudioEnabled: Bool { get set }
@@ -30,11 +31,12 @@ protocol FlippableContent: ObservableObject {
     func playSound()
     func resetView()
     func stopAllActivities()
-
 }
 
+
+
 struct FlippingCard: View {
-    let content: String
+    let content: Any
     @Binding var isFlipping: Bool
 
     @State private var rotation: Double = 0
@@ -45,14 +47,36 @@ struct FlippingCard: View {
                 .fill(Color.blue.opacity(0.3))
                 .frame(width: 1000, height: 750)
                 .overlay(
-                    Text(content)
-                        .font(.system(size: 900))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-                        .rotation3DEffect(
-                            .degrees(rotation),
-                            axis: (x: 0, y: 1, z: 0)
-                        )
+                    Group {
+                        if let stringContent = content as? String {
+                            Text(stringContent)
+                                .font(.system(size: 900))
+                                .fontWeight(.bold)
+                                .foregroundColor(.black)
+                        } else if let numberContent = content as? NumberData.NumberContent {
+                            ZStack {
+                                Text(numberContent.number)
+                                    .font(.system(size: 700))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.black)
+                                HStack {
+                                    Spacer()
+                                    VStack {
+                                        Spacer()
+                                        Text(numberContent.spelling)
+                                            .font(.system(size: 50))
+                                            .fontWeight(.medium)
+                                            .foregroundColor(.black.opacity(0.7))
+                                            .offset(x: -30, y: -50)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rotation3DEffect(
+                        .degrees(rotation),
+                        axis: (x: 0, y: 1, z: 0)
+                    )
                 )
                 .rotation3DEffect(
                     .degrees(rotation),
@@ -93,8 +117,8 @@ struct OrderSelectionView: View {
     
     var body: some View {
         Picker("Order", selection: $isRandomOrder) {
-            Text("Sequential").tag(false)
-            Text("Random").tag(true)
+            Text("Order: Sequential").tag(false)
+            Text("Order: Random").tag(true)
         }
         .pickerStyle(MenuPickerStyle())
     }
@@ -186,4 +210,8 @@ struct MainView<Content: FlippableContent>: View {
             content.resetView()
         }
     }
+}
+
+#Preview {
+    NumbersView()
 }
