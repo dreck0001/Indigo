@@ -43,7 +43,7 @@ class AlphabetsViewModel: FlippableContent {
     @Published var isAudioEnabled: Bool = true
     @Published var play: Bool = false
     @Published var isFlipping: Bool = false
-    @Published var selectedCaseType: CaseType = .both
+    @Published var selectedCaseType: CaseType = .upper
     
     private var timer: Timer?
     private var audioPlayer: AVAudioPlayer?

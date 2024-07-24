@@ -63,12 +63,12 @@ struct Button3: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .foregroundColor(colorScheme == .dark ? .black : .white)
+            .foregroundColor(.white)
             .frame(maxWidth: .infinity, maxHeight: maxHeight)
             .padding()
             .bold()
             .background(RoundedRectangle(cornerRadius: radius)
-                .fill(Color.primary1))
+                .fill(Color.indigo))
     }
 }
 
@@ -77,7 +77,7 @@ struct Button4: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .foregroundColor(Color.primary1)
+            .foregroundColor(Color.indigo)
             .frame(maxWidth: .infinity, maxHeight: maxHeight)
             .padding()
             .bold()
@@ -85,7 +85,7 @@ struct Button4: ViewModifier {
                 .fill(colorScheme == .dark ? .black : .white)
                 .overlay(
                     RoundedRectangle(cornerRadius: radius)
-                        .stroke(Color.primary1, lineWidth: lineThickness)
+                        .stroke(Color.indigo, lineWidth: lineThickness)
                 )
             )
     }
@@ -95,18 +95,11 @@ struct Button5: ViewModifier {
     @Environment(\.colorScheme) var colorScheme
     func body(content: Content) -> some View {
         content
-            .foregroundColor(colorScheme == .dark ? .black : .white)
+            .foregroundColor(.white)
             .frame(maxWidth: .infinity, maxHeight: maxHeight)
             .padding()
             .bold()
-            .background(RoundedRectangle(cornerRadius: 10).fill(Color.primary1))
-
-        
-//            .foregroundColor(.white)
-//            .frame(maxWidth: .infinity)
-//            .padding()
-//            .bold()
-//            .background(RoundedRectangle(cornerRadius: 10).fill(Color.primary1))
+            .background(RoundedRectangle(cornerRadius: 10).fill(Color.indigoLight))
     }
 }
     

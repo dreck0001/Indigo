@@ -19,16 +19,22 @@ enum Menu: String {
 
 extension Color {
     private static func rgb(red: Double, green: Double, blue: Double) -> Color {
-            return Color(red: red / 255, green: green / 255, blue: blue / 255)
+        return Color(red: red / 255, green: green / 255, blue: blue / 255)
     }
-    static let primary1   = Color.rgb(red: 50, green: 186, blue: 174)  // #32BAAC
-    static let secondary1 = Color.rgb(red: 175, green: 50, blue: 186)  // #AF32BA
-    static let tertiary1  = Color.rgb(red: 186, green: 175, blue: 50)  // #BAAF32
-
+    
+    static let indigo = Color.rgb(red: 75, green: 0, blue: 130) // Indigo color
+    static let indigoLight = Color.rgb(red: 111, green: 54, blue: 170) // Lighter indigo for contrast
+    static let indigoDark = Color.rgb(red: 54, green: 0, blue: 94) // Darker indigo for contrast
+    
 //    static let primaryBlueGreen = Color(red: 50 / 255, green: 186 / 255, blue: 174 / 255) //#32baae
     static let primaryRed = Color(.red)
     static let primaryBlueGreen2 = UIColor(Color(#colorLiteral(red: 0.1960784314, green: 0.7294117647, blue: 0.6823529412, alpha: 0.04)))
     static let primaryBlueGreen3 = Color(#colorLiteral(red: 0.1960784314, green: 0.7294117647, blue: 0.6823529412, alpha: 0.04))
+    
+    static let primary1 = indigo
+    static let secondary1 = Color.rgb(red: 175, green: 50, blue: 186)
+    static let tertiary1 = Color.rgb(red: 186, green: 175, blue: 50)
+
 
 }
 
