@@ -155,11 +155,18 @@ struct MainView<Content: FlippableContent>: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     Spacer()
-                    FlippingCard(
-                        content: content.currentContent[content.getCurrentIndex()],
-                        isFlipping: $content.isFlipping,
-                        caseType: (content as? AlphabetsViewModel)?.selectedCaseType
-                    )
+                    if Content.self == ColorsViewModel.self {
+                        ColorFlippingCard(
+                            content: (content.currentContent[content.getCurrentIndex()] as! ColorData.ColorContent),
+                            isFlipping: $content.isFlipping
+                        )
+                    } else {
+                        FlippingCard(
+                            content: content.currentContent[content.getCurrentIndex()],
+                            isFlipping: $content.isFlipping,
+                            caseType: (content as? AlphabetsViewModel)?.selectedCaseType
+                        )
+                    }
                 }
                 .frame(width: geometry.size.width * 3/4)
                 
@@ -234,5 +241,5 @@ struct MainView<Content: FlippableContent>: View {
 }
 
 #Preview {
-    AlphabetsView()
+    ColorsView()
 }
